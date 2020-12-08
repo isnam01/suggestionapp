@@ -10,7 +10,7 @@ export default function App() {
     "Folk Music ✨": [{song:"Kesariya Balam 💘💘",link:"song"},{song:"Chaudhary 💞💞",artist:"Armaan Malik",link:soundfile}],
     "Jazz 🎵": [{song:"hello adi 😍",artist:"Armaan Malik",link:soundfile},{song:"hello bello",artist:"Armaan Malik",link:soundfile}]
   };
-  const [meaning, setmeaning] = useState(dict["aditi"]);
+  const [meaning, setmeaning] = useState(dict["Instrumental 🎶"]);
   const keys = Object.keys(dict);
   function handleclick(key) {
     setmeaning(dict[key]);
