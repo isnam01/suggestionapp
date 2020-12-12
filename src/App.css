@@ -67,6 +67,7 @@ p{
   }
   .song img{
     height:250px;
-    width:350px;
+    width:300px;
+    margin:0;
   }
 }
