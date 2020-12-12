@@ -66,4 +66,8 @@ p{
   .song {
     flex-direction: column;
   }
+  .song img{
+    height:"250";
+    width:"200";
+  }
 }
