@@ -57,7 +57,6 @@ p{
   flex-direction: row;
   margin: 10px;
   min-width:200px;
-  padding:10px;
   background-color:rgba(255, 255, 255, 0.062);
   border-radius: 10px;
 }
@@ -67,7 +66,7 @@ p{
     flex-direction: column;
   }
   .song img{
-    height:"250";
-    width:"200";
+    height:250px;
+    width:350px;
   }
 }
