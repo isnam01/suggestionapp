@@ -62,7 +62,7 @@ export default function App() {
               return (
                 <div key={val.song} className="song">
                   <div>
-                    <img src={val.pic} height="170px" width="170px" style={{marginRight:"8px"}} alt="pic"></img>
+                    <img src={val.pic} height="175px" width="200px" alt="pic"></img>
                   </div>
                   <div style={{"padding":"15px"}}>
                     <span style={{"padding":"15px"}} key={val.song}>{val.song}</span>
