@@ -32,10 +32,10 @@ import yetumhari from './pic/yetumhari.jpg';
 export default function App() {
   const dict = {
     "Instrumental 🎶": [{song:"Tango For Taj 😍💞",artist:"A.R. Rahman",link:tango,pic:rock},{song:"The Dichotomy Of Fame 🤩💖",artist:"A.R. Rahman",link:dichotomy,pic:rock},{song:"Meeting Place 🤩💕",artist:"A.R. Rahman",link:meeting,pic:rock}],
-    "HipHop 🎧": [{song:"Aafat Waapas ❤",artist:"Armaan Malik",link:aafat,pic:aafatp},{song:"Independent ",artist:"J Trix ft. Projekt AZ & 5aumit",link:independent,pic:inde},{song:"Kaam 25",artist:"Armaan Malik",link:kaam,pic:kaam25}],
+    "HipHop 🎧": [{song:"Aafat Waapas ❤",artist:"Naezy",link:aafat,pic:aafatp},{song:"Independent ",artist:"J Trix ft. Projekt AZ & 5aumit",link:independent,pic:inde},{song:"Kaam 25",artist:"Divine",link:kaam,pic:kaam25}],
     "EDM 🎛": [{song:"Animals 😍",artist:"Maroon 5",link:maroon,pic:animals},{song:"Magenta Riddim 🥰",artist:"DJ Snake",link:magenta,pic:magentap},{song:"Ved 🥰",artist:"Ritviz",link:ved,pic:vedp}],
-    "Folk Music ✨": [{song:"Kesariya Balam 💘💘",link:kesariya,pic:kesariyap},{song:"Chaudhary 💞💞",artist:"Armaan Malik",link:chodhary,pic:choudhary},{song:"Aayat 💞💞",artist:"Armaan Malik",link:aayat,pic:aayatp}],
-    "Jazz 🎵": [{song:"Kaisi Paheli 😍",artist:"Armaan Malik",link:paheli,pic:kaisi},{song:"Ek Ladki 😍💓",artist:"Armaan Malik",link:ekladki,pic:ekldki},{song:"Ye tumhari meri baatein 😍💓",artist:"Armaan Malik",link:battein,pic:yetumhari}]
+    "Folk Music ✨": [{song:"Kesariya Balam 💘💘",artist:"Seema Mishra",link:kesariya,pic:kesariyap},{song:"Chaudhary 💞💞",artist:"Amit Trivedi ft. Mame Khan",link:chodhary,pic:choudhary},{song:"Aayat 💞💞",artist:"Arijit Singh",link:aayat,pic:aayatp}],
+    "Jazz 🎵": [{song:"Kaisi Paheli 😍",artist:"Sunidhi Chauhan",link:paheli,pic:kaisi},{song:"Ek Ladki 😍💓",artist:"Kishore Kumar",link:ekladki,pic:ekldki},{song:"Ye tumhari meri baatein 😍💓",artist:"Dominique Serejo",link:battein,pic:yetumhari}]
   };
   const [meaning, setmeaning] = useState(dict["Instrumental 🎶"]);
   const keys = Object.keys(dict);
