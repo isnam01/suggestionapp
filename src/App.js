@@ -15,17 +15,29 @@ import aayat from './songs/Lyrical__Aayat___Full_Song_with_Lyrics___Bajirao_Mast
 import paheli from './songs/Kaisi-Paheli-Zindagani-Sunidhi-Chauhan.mp3';
 import ekladki from './songs/Ek-Ladki-Bheegi-Bhaagi-Si-Kishore-Kumar.mp3';
 import battein from './songs/Ye-Tumhari-Meri-Baatein-Dominique-Cerejo.mp3';
-
+import rock from './pic/rockstar.jpg';
+import aafatp from './pic/aafat.jpg';
+import inde from './pic/inde.jpg';
+import kaam25 from './pic/kaam25.jpg';
+import animals from './pic/animals.jpg';
+import magentap from './pic/magenta.jpg';
+import vedp from './pic/ved.jpg';
+import kesariyap from './pic/kesariya.jpg';
+import choudhary from './pic/choudhary.jpg';
+import aayatp from './pic/aayat.jpg';
+import kaisi from './pic/kaisi.jpg';
+import ekldki from './pic/ekldki.jpg';
+import yetumhari from './pic/yetumhari.jpg';
 
 export default function App() {
   const dict = {
-    "Instrumental 🎶": [{song:"Tango For Taj 😍💞",artist:"Armaan Malik",link:tango},{song:"The Dichotomy Of Fame 🤩💖",artist:"Armaan Malik",link:dichotomy},{song:"Meeting Place 🤩💕",artist:"Armaan Malik",link:meeting}],
-    "HipHop 🎧": [{song:"Aafat Waapas ❤",artist:"Armaan Malik",link:aafat},{song:"Independent J Trix ft Projekt",artist:"Armaan Malik",link:independent},{song:"Kaam 25",artist:"Armaan Malik",link:kaam}],
-    "EDM 🎛": [{song:"Maroon 5 😍",artist:"Armaan Malik",link:maroon},{song:"Magenta Riddim 🥰",artist:"Armaan Malik",link:magenta},{song:"Ritviz -Ved 🥰",artist:"Armaan Malik",link:ved}],
-    "Folk Music ✨": [{song:"Kesariya Balam 💘💘",link:kesariya},{song:"Chaudhary 💞💞",artist:"Armaan Malik",link:chodhary},{song:"Aayat 💞💞",artist:"Armaan Malik",link:aayat}],
-    "Jazz 🎵": [{song:"Kaisi Paheli 😍",artist:"Armaan Malik",link:paheli},{song:"Ek Ladki 😍💓",artist:"Armaan Malik",link:ekladki},{song:"Yetumhari meri baatein 😍💓",artist:"Armaan Malik",link:battein}]
+    "Instrumental 🎶": [{song:"Tango For Taj 😍💞",artist:"A.R. Rahman",link:tango,pic:rock},{song:"The Dichotomy Of Fame 🤩💖",artist:"A.R. Rahman",link:dichotomy,pic:rock},{song:"Meeting Place 🤩💕",artist:"A.R. Rahman",link:meeting,pic:rock}],
+    "HipHop 🎧": [{song:"Aafat Waapas ❤",artist:"Armaan Malik",link:aafat,pic:aafatp},{song:"Independent ",artist:"J Trix ft. Projekt AZ & 5aumit",link:independent,pic:inde},{song:"Kaam 25",artist:"Armaan Malik",link:kaam,pic:kaam25}],
+    "EDM 🎛": [{song:"Animals 😍",artist:"Maroon 5",link:maroon,pic:animals},{song:"Magenta Riddim 🥰",artist:"DJ Snake",link:magenta,pic:magentap},{song:"Ved 🥰",artist:"Ritviz",link:ved,pic:vedp}],
+    "Folk Music ✨": [{song:"Kesariya Balam 💘💘",link:kesariya,pic:kesariyap},{song:"Chaudhary 💞💞",artist:"Armaan Malik",link:chodhary,pic:choudhary},{song:"Aayat 💞💞",artist:"Armaan Malik",link:aayat,pic:aayatp}],
+    "Jazz 🎵": [{song:"Kaisi Paheli 😍",artist:"Armaan Malik",link:paheli,pic:kaisi},{song:"Ek Ladki 😍💓",artist:"Armaan Malik",link:ekladki,pic:ekldki},{song:"Ye tumhari meri baatein 😍💓",artist:"Armaan Malik",link:battein,pic:yetumhari}]
   };
-  const [meaning, setmeaning] = useState("Instrumental 🎶");
+  const [meaning, setmeaning] = useState(dict["Instrumental 🎶"]);
   const keys = Object.keys(dict);
   function handleclick(key) {
     setmeaning(dict[key]);
@@ -49,13 +61,18 @@ export default function App() {
           ? meaning.map((val) => {
               return (
                 <div key={val.song} className="song">
-                  <span style={{"padding":"15px"}} key={val.song}>{val.song}</span>
-                  <p>{val.artist}</p>
-                  <audio controls  style={{"outline":"none"}}>
-                    {val.link}.load()
-                    <source src={val.link} type="audio/ogg" />
-                      Your browser does not support the audio element.
-                  </audio>
+                  <div>
+                    <img src={val.pic} height="170px" width="170px" style={{margin:"8px"}}></img>
+                  </div>
+                  <div>
+                    <span style={{"padding":"15px"}} key={val.song}>{val.song}</span>
+                    <p>{val.artist}</p>
+                    <audio controls  style={{"outline":"none"}}>
+                      {val.link}.load()
+                      <source src={val.link} type="audio/ogg" />
+                        Your browser does not support the audio element.
+                    </audio>
+                  </div>
               </div>
               )
             })

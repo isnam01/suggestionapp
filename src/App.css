@@ -54,10 +54,16 @@ p{
 
 .song{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 10px;
   min-width:200px;
   padding:10px;
   background-color:rgba(255, 255, 255, 0.062);
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .song {
+    flex-direction: column;
+  }
 }
