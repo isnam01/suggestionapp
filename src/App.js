@@ -25,7 +25,7 @@ export default function App() {
     "Folk Music ✨": [{song:"Kesariya Balam 💘💘",link:kesariya},{song:"Chaudhary 💞💞",artist:"Armaan Malik",link:chodhary},{song:"Aayat 💞💞",artist:"Armaan Malik",link:aayat}],
     "Jazz 🎵": [{song:"Kaisi Paheli 😍",artist:"Armaan Malik",link:paheli},{song:"Ek Ladki 😍💓",artist:"Armaan Malik",link:ekladki},{song:"Yetumhari meri baatein 😍💓",artist:"Armaan Malik",link:battein}]
   };
-  const [meaning, setmeaning] = useState("");
+  const [meaning, setmeaning] = useState("Instrumental 🎶");
   const keys = Object.keys(dict);
   function handleclick(key) {
     setmeaning(dict[key]);
