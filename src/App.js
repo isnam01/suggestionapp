@@ -48,10 +48,11 @@ export default function App() {
         {meaning
           ? meaning.map((val) => {
               return (
-                <div className="song">
+                <div key={val.song} className="song">
                   <span style={{"padding":"15px"}} key={val.song}>{val.song}</span>
                   <p>{val.artist}</p>
                   <audio controls  style={{"outline":"none"}}>
+                    {val.link}.load()
                     <source src={val.link} type="audio/ogg" />
                       Your browser does not support the audio element.
                   </audio>
